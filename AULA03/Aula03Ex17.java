@@ -22,26 +22,39 @@ public class Aula03Ex17 {
 		altura = ler.nextDouble();
 		
 		System.out.printf("Digite o sexo (F ou M): ");
-		sexo = texto.nextLine();
+		sexo = texto.next();
 		
 		imc = peso / (altura * altura);
 		
-		if (sexo == "F") {
+		if (sexo == "F" || sexo == "f") {
 			if (imc < 19) {
+				
 				System.out.printf("Abaixo do peso");
+				
 				}else if (imc <= 19 || imc < 24) {
+					
 					System.out.printf("Peso ideal");
+					
 				}else if (imc >= 24) {
+					
 					System.out.printf("Acima do peso");
 				}
 		}else{
+			
 			if (imc < 20) {
-			System.out.printf("Abaixo do peso");
+				
+				System.out.printf("Abaixo do peso");
+				
 			}else if (imc <= 20 || imc < 25) {
+				
 				System.out.printf("Peso ideal");
+				
 			}else if (imc >= 25) {
+				
 				System.out.printf("Acima do peso");
+				
 			}
+			
 		}
 		
 		ler.close();
